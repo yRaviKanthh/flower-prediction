@@ -1,0 +1,153 @@
+{% block content %}
+  <style>
+    /* Set the background image for the entire page */
+    body {
+      background-image: url('https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?cs=srgb&dl=pexels-hieu-697259.jpg&fm=jpg'); /* Updated image URL */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* No repeating */
+      height: 100vh; /* Full height of the viewport */
+      margin: 0; /* Remove default margin */
+    }
+
+    /* Centering the form container */
+    .form-container {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+      background-color: rgba(245, 245, 245, 0.8); /* Soft, light background with transparency */
+      border: 2px solid #b8860b; /* Classic gold border */
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Deep shadow for elegance */
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* Form elements styling */
+    table {
+      width: 100%;
+      border-spacing: 10px; /* Classic spacing between fields */
+    }
+
+    td {
+      padding: 12px;
+      font-family: 'Times New Roman', serif; /* Classic serif font */
+      font-size: 18px;
+      color: #2c3e50; /* Rich dark tone for text */
+      vertical-align: top;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #b8860b; /* Gold border for input fields */
+      font-size: 16px;
+      margin-bottom: 12px;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #8b4513; /* Deep brown button color */
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      font-family: 'Georgia', serif; /* Elegant font for buttons */
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.4s ease;
+    }
+
+    button:hover {
+      background-color: #b8860b; /* Classic gold on hover */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 38px;
+      color: #8b4513; /* Deep brown color */
+      margin-bottom: 25px;
+      font-family: 'Garamond', serif; /* Classic Garamond font for heading */
+      text-transform: capitalize;
+      letter-spacing: 2px;
+    }
+
+    /* Optional classic borders and styling */
+    td:first-child {
+      border-right: 2px solid #8b4513;
+    }
+
+    /* Styling the result area */
+    .result-container {
+      margin-top: 20px;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Garamond', serif;
+      background-color: #fff3e0; /* Soft background for result */
+      border: 2px solid #b8860b; /* Gold border */
+      border-radius: 15px;
+      color: #8b4513; /* Match text with form style */
+      font-size: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Light shadow for result */
+    }
+
+    /* Result heading styling */
+    .result-heading {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #d2691e; /* Slightly lighter shade for contrast */
+    }
+  </style>
+
+  <div class="form-container">
+    <form method="POST" action="{% url 'iris' %}">
+      {% csrf_token %}
+      <h1>Flower Prediction</h1>
+      <table>
+        <tr>
+          <td>Enter the Area Code</td>
+          <td><input type="text" name="area_code" required></td>
+        </tr>
+        <tr>
+          <td>Enter the Locality Code</td>
+          <td><input type="text" name="locality_code" required></td>
+        </tr>
+        <tr>
+          <td>Enter the Region Code</td>
+          <td><input type="text" name="region_code" required></td>
+        </tr>
+        <tr>
+          <td>Enter the Height</td>
+          <td><input type="text" name="height" required></td>
+        </tr>
+        <tr>
+          <td>Enter the Diameter</td>
+          <td><input type="text" name="diameter" required></td>
+        </tr>
+        <tr>
+          <td>Enter the Species</td>
+          <td><input type="text" name="species" required></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit" name="buttonpredict">Predict</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    {% if result %}
+    <div class="result-container">
+      <div class="result-heading">Prediction Result:</div>
+      <p>{{ result }}</p>
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}
