@@ -79,9 +79,11 @@ python manage.py runserver
 
 ![predictionpage](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/predictionpage.png)
 
+
 ![database](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/db.png)
 
-![Result](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/blob/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/result.png)
+
+![Result](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/result.png)
 
 ---
 
