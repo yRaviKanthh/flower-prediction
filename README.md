@@ -61,31 +61,36 @@ cd flower-prediction
 ```
 ### 🔹 Install Dependencies
 ```bash
-Copy
-Edit
+
 pip install -r requirements.txt
 ```
 
 ### 🔹 Run the Application
 ```bash
-Copy
-Edit
+
 python manage.py runserver
 🔗 Open in your browser: http://127.0.0.1:8000/
 ```
+---
 
-📸 Screenshots
-🔹 Web Interface
+### 📸 Screenshots
+
+### 🔹 Web Interface
+
+
+---
 
 
 
-🏆 Future Enhancements
+### 🏆 Future Enhancements
 ✅ Improve prediction accuracy with deep learning
 ✅ Add visualization for flower data
 ✅ Deploy on cloud platforms
 ✅ Implement an API for third-party integration
 
-💡 Need Help?
+---
+
+### 💡 Need Help?
 Feel free to open an issue or contribute to improve this project! 😊
 ⭐ If you like this project, give it a star on GitHub! ⭐
 
