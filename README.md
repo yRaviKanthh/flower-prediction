@@ -77,11 +77,11 @@ python manage.py runserver
 
 ### 🔹 Web Interface
 
-### 🔹 predictionpage
+### 🔹 Predictionpage
 
 ![predictionpage](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/predictionpage.png)
 
-### 🔹 database
+### 🔹 Database
 
 ![database](https://raw.githubusercontent.com/yRaviKanthh/flower-prediction/9064e0eeb8de93178055f80343c3adb61b524118/flower-prediction/GUI/screenshots/db.png)
 
