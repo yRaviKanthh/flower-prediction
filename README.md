@@ -17,9 +17,12 @@ The application predicts different types of flowers based on user-input features
 
 ## 📂 Project Structure  
 ```
-flower_prediction/
+GUI/
 ├── basics/
+    ├── __pycache__              # Compiled Python files
 │   ├── templates/              # HTML templates for frontend
+        ├── index.html
+        ├── iris.html
 │   ├── __init__.py             # Package initialization
 │   ├── admin.py                # Django admin setup
 │   ├── apps.py                 # Django app configuration
@@ -27,20 +30,15 @@ flower_prediction/
 │   ├── tests.py                # Test cases
 │   ├── views.py                # Handles user requests
 ├── GUI/
+    ├── __pycache__             # Compiled Python files
 │   ├── __init__.py             # Package initialization
 │   ├── asgi.py                 # ASGI configuration
 │   ├── settings.py             # Project settings
 │   ├── urls.py                 # URL routing
 │   ├── wsgi.py                 # WSGI configuration
-├── static/
-│   ├── style.css               # Stylesheet for the application
-│   ├── script.js               # JavaScript functions
-│   ├── images/                 # Store static images
-├── screenshots/                # Screenshots for GitHub
-├── db.xml                      # XML file for storing data
+│   ├── db.sqlit3               # SQLite database file
 ├── manage.py                    # Django project management
 ├── README.md                    # Project documentation
-├── requirements.txt             # Dependencies list
 ├── .gitignore                   # Ignore unnecessary files
 ```
 ---
