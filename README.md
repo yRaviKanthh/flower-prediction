@@ -16,6 +16,7 @@ The application predicts different types of flowers based on user-input features
 ---
 
 ## 📂 Project Structure  
+```
 flower_prediction/
 ├── basics/
 │   ├── templates/              # HTML templates for frontend
@@ -41,7 +42,7 @@ flower_prediction/
 ├── README.md                    # Project documentation
 ├── requirements.txt             # Dependencies list
 ├── .gitignore                   # Ignore unnecessary files
-
+```
 yaml
 Copy
 Edit
