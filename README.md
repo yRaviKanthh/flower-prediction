@@ -95,12 +95,6 @@ python manage.py runserver
 Feel free to open an issue or contribute to improve this project! 😊
 ⭐ If you like this project, give it a star on GitHub! ⭐
 
-vbnet
-Copy
-Edit
-
-This **README.md** follows your preferred format and will display correctly on **GitHub**.  
-Let me know if you need any more changes! 🚀
 
 
 
