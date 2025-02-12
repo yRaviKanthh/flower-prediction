@@ -46,7 +46,7 @@ GUI/
 ## 🎯 Technologies Used  
 
 - *Backend:* Python, Django  
-- *Machine Learning:* Scikit-Learn / TensorFlow  
+- *Machine Learning:* Scikit-Learn,Pandas 
 - *Data Storage:* XML Files  
 - *Frontend:* HTML, CSS, JavaScript  
 
