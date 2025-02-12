@@ -43,10 +43,6 @@ flower_prediction/
 ├── requirements.txt             # Dependencies list
 ├── .gitignore                   # Ignore unnecessary files
 ```
-yaml
-Copy
-Edit
-
 ---
 
 ## 🎯 Technologies Used  
@@ -62,7 +58,7 @@ Edit
 
 ### 🔹 Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/flower-prediction.git  
+git clone https://github.com/yRaviKanthh/flower-prediction.git
 cd flower-prediction
 🔹 Install Dependencies
 bash
