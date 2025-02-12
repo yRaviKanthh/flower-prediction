@@ -83,6 +83,7 @@ python manage.py runserver
 
 
 ### 🏆 Future Enhancements
+
 ✅ Improve prediction accuracy with deep learning
 ✅ Add visualization for flower data
 ✅ Deploy on cloud platforms
